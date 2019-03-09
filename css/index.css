@@ -114,6 +114,15 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-content-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding-bottom:20px;
+    border-bottom: 1px dashed black;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
@@ -250,7 +259,9 @@ p {
     justify-content: center;
 }
  
-
+.middle-content-about .about-boxes {
+    border: purple solid 1px;
+}   /*WHYYYYYYY*/
 
 
 .bottom-content {
