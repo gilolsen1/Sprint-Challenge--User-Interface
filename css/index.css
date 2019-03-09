@@ -72,15 +72,16 @@ p {
 }
 
 .navbar {
-    border: solid green 1px;
+    border: none;
     display: flex;
     padding-right: 30px;
     margin-bottom: 20px;
+    margin-top: 20px;
     justify-content: space-between;
 }
 
 .navbar a {
-    border: solid blue 1px;
+    border: none;
     color: black;
     display:flex;
     flex-direction: row;
@@ -97,7 +98,7 @@ p {
 
 .highwayjumbo img {
     display: flex;
-    border: 1px red solid;  /*remove border*/
+    border: none;  /*remove border*/
     padding: 0 1%;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -259,10 +260,36 @@ p {
     justify-content: center;
 }
  
-.middle-content-about .about-boxes {
-    border: purple solid 1px;
-}   /*WHYYYYYYY*/
+.middle-content-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    border: none;
+}   /*Wasnt working with images out of div not si*/
 
+.h2about {
+padding-top: 10px;
+}
+
+.middle-content-about .about-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    border-bottom: dotted 2px black;
+    padding:20px;
+    margin: .5%;
+}   /*Wasnt working with images out of div not si*/
+
+.button {
+    width: 100px;
+    height: 25px;
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: none;
+}
 
 .bottom-content {
     display: flex;
