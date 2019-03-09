@@ -71,6 +71,34 @@ p {
     margin: 0 auto;
 }
 
+.navbar {
+    display: flex;
+    margin: 0px, 0px, 100px, 0px;
+    justify-content: space-between;
+}
+
+/*get logo to left
+.navbar logo {
+    display: flex;
+    justify-content: flex-start;
+}*/
+
+.navbar a {
+    color: black;
+    display:flex;
+    flex-direction: row;
+    text-decoration: none;
+    /*justify-content: flex-end; deletable */
+    align-items: flex-end;
+}
+
+#highwayjumbo {
+    border: 5px red solid;  /*SELCTING ISSUE*/
+    padding: 0 1%;
+    padding-bottom: 20px;
+    margin: 20px;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -104,6 +132,17 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
+    background: blue;  /*changes color of all class*/
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*     WORK ON SPECIFICITY/INHERITANCE TO SELECT INDIVIDUAL BOXES
+.middle-content .boxes .box .box1 {
+    width: 12.5%;
+    height: 100px;
     background: black;
     margin: 20px 2.5%;
     color: white;
@@ -111,6 +150,9 @@ p {
     align-items: center;
     justify-content: center;
 }
+*/  
+
+
 
 .bottom-content {
     display: flex;
