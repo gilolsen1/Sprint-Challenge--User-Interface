@@ -72,18 +72,15 @@ p {
 }
 
 .navbar {
+    border: solid green 1px;
     display: flex;
-    margin: 0px, 0px, 100px, 0px;
+    padding-right: 30px;
+    margin-bottom: 20px;
     justify-content: space-between;
 }
 
-/*get logo to left
-.navbar logo {
-    display: flex;
-    justify-content: flex-start;
-}*/
-
 .navbar a {
+    border: solid blue 1px;
     color: black;
     display:flex;
     flex-direction: row;
@@ -92,11 +89,18 @@ p {
     align-items: flex-end;
 }
 
+.navbar img {  /*allign logo left */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 .highwayjumbo img {
     display: flex;
     border: 1px red solid;  /*remove border*/
     padding: 0 1%;
     padding-bottom: 20px;
+    padding-top: 20px;
     width: 100%;
 }
 
