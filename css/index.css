@@ -89,6 +89,16 @@ p {
     /*justify-content: flex-end; deletable */
     align-items: flex-end;
 }
+.navbar a:hover {
+    border: none;
+    color: white;
+    background-color: black;
+    display:flex;
+    flex-direction: row;
+    text-decoration: none;
+    /*justify-content: flex-end; deletable */
+    align-items: flex-start;
+}
 
 .navbar img {  /*allign logo left */
     display: flex;
