@@ -34,15 +34,36 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+Semantic HTML is the set of tools that provide meaning to content such as text, images, and other types of data.
+The tags add context to the information, so that both you and the machine/code can process it in context.  
+The tags enable you and other developers to understand the code as you read it, and they enable code to manipulate the data as well. 
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+Displaying an element with block will take up the entire width of a page, and not allow any other elements on that "line", for whatever the height of the `display: block;` content is.
+`Display: inline;` will allow other `display:inline` elements on the same line. 
+In other words, Content "flows around" elements set to `display:inline`
+A block element introduces a page break as well. 
 
 3. What are the 4 areas of the box model?
 
+Just like an Amazon order, from the inside out:  
+Content>Padding>Border>Margin : Box Model ::Consumergoods>Packaging>Box>Mailman : Amazon delivery
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
+
+The cross axis. 
+Vertical or Horizontal depends on the flex direction: 
+If `flex-direction:row;` cross axis == veritical.
+If `flex-direction:column;` cross axis == horozontal.
 
 5. Explain why git is valuable to a team of developers.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+
+git allows each developer to create their own versions of pieces of a codebase, so they can work together on the same thing without "stepping on eachother's toes".
+It tracks all the changes to the code, and allows them to be saved in different places in time, combined, copied etc.
+All this data enables each local machine to interface with cloud-based version control platforms like GitHub, BitBucket or Mercurial.
 
 ## Project Set Up
 

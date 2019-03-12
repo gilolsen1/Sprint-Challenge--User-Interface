@@ -71,11 +71,56 @@ p {
     margin: 0 auto;
 }
 
+.navbar {
+    border: none;
+    display: flex;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.navbar a {
+    border: none;
+    color: black;
+    display:flex;
+    flex-direction: row;
+    text-decoration: none;
+    /*justify-content: flex-end; deletable */
+    align-items: flex-end;
+}
+
+.navbar img {  /*allign logo left */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.highwayjumbo img {
+    display: flex;
+    border: none;  /*remove border*/
+    padding: 0 1%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding-bottom:20px;
     border-bottom: 1px dashed black;
 }
 
@@ -104,12 +149,146 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
+    background: blue;  /*changes color of all class*/
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /*these three lines align text in boxes*/
+}
+
+/*     WORK ON SPECIFICITY/INHERITANCE TO SELECT INDIVIDUAL BOXES*/ 
+#box1 {
+    width: 12.5%;
+    height: 100px;
+    background: teal;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#box2 {
+    width: 12.5%;
+    height: 100px;
+    background: gold;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box3 {
+    width: 12.5%;
+    height: 100px;
+    background: cadetblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;   /* something super weird happend with 3-10, then messed with html and middle contents and it worked shrugs... */
+}
+#box4 {
+    width: 12.5%;
+    height: 100px;
+    background: coral;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box5 {
+    width: 12.5%;
+    height: 100px;
+    background: crimson;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box6 {
+    width: 12.5%;
+    height: 100px;
+    background: forestgreen;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box7 {
+    width: 12.5%;
+    height: 100px;
+    background:darkorchid;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box8 {
+    width: 12.5%;
+    height: 100px;
+    background:hotpink;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box9 {
+    width: 12.5%;
+    height: 100px;
+    background:indigo;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box10 {
+    width: 12.5%;
+    height: 100px;
+    background:dodgerblue;
+    margin: 20px 2.5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.middle-content-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    border: none;
+}   /*Wasnt working with images out of div not si*/
+
+.h2about {
+padding-top: 10px;
+}
+
+.middle-content-about .about-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    border-bottom: dotted 2px black;
+    padding:20px;
+    margin: .5%;
+}   /*Wasnt working with images out of div not si*/
+
+.button {
+    width: 100px;
+    height: 25px;
+    padding: 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: none;
 }
 
 .bottom-content {
